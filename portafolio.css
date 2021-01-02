@@ -65,7 +65,7 @@
 	background: #ccc;
 	height: 10px;
 	position: relative;
-	margin: 5rem 0;
+	margin: 6rem 0;
 }
 .article__loadBar__texto,.article__loadBar__textoP{
 	position: absolute;
@@ -87,12 +87,6 @@
 }
 .cinco,.seis,.siete{
 	width: 50%;
-}
-.section__article__loadBar:nth-child(4){
-	margin: 5rem 0 0 0;
-}
-.section__article__loadBar:nth-child(5){
-	margin: 4rem 0 0 0;
 }
 /*Barra de Progreso Fin*/
 /*Sobre mi Inicio*/
@@ -166,7 +160,7 @@
 .scrollImg12{
 	background: url("imgs/imgPortafolio9-min.webp");	
 }
-@media screen and (min-width: 320px) and (orientation:portrait){
+@media screen and (min-width: 320px) and (min-height: 393px) and (orientation:portrait){
 	.header__nav{
 		height: 100vh;
 		width: 100vw;
@@ -203,13 +197,13 @@
 	.sectionBP{
 		position: static;
 		justify-content: center;
-		height:100vh;
+		height:110vh;
 		width: 100vw;
 		margin-top: 50px;
 	}
 	.sectionBP__article{
 		width: 95%;
-		margin: 0 10px 30px 8px;
+		margin: 0 10px 0 8px;
 		height: 100%;
 	}
 	.section__sobreMi{
@@ -227,7 +221,7 @@
 	}
 }
 
-@media screen and (min-width: 320px) and (orientation:landscape){
+@media screen and (min-height: 320px) and (orientation:landscape){
 	.header__nav{
 		height: 100vh;
 		width: 100vw;
@@ -270,7 +264,7 @@
 	}
 	.sectionBP__article{
 		width: 95%;
-		margin: 0 10px 95px 8px;
+		margin: 0 10px 25% 8px;
 		height: 100%;
 	}
 	.section__sobreMi{
