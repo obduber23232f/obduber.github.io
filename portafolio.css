@@ -34,7 +34,6 @@
 	background: white;
 	height:2px;
 	width: 80%;
-	margin-top: -1.1in;
 }
 .linea2{
 	opacity: 0.5;
@@ -78,7 +77,6 @@
 	bottom: 15px;
 	left: 90%;
 }
-
 .progress{
 	display: block;
 	background: #673ab7;
@@ -87,7 +85,6 @@
 .uno,.dos,.tres,.cuatro,.ocho,.nueve{
 	width: 90%;
 }
-
 .cinco,.seis,.siete{
 	width: 50%;
 }
@@ -97,13 +94,20 @@
 .section__article__loadBar:nth-child(5){
 	margin: 4rem 0 0 0;
 }
-
 /*Barra de Progreso Fin*/
-/*Sobre mi*/
+/*Sobre mi Inicio*/
 .section__sobreMi__article:last-child{
 	text-align: justify;
 }
-/*Sbre mi*/
+.section__sobreMi__imgP{
+	background-image: url("imgs/Yo.jpg");
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+/*Sbre mi Fin*/
 .scroll{
 	display: block;
 	background-position: center top !important;
@@ -116,7 +120,6 @@
 	/*The ease-out 0.5s es el tiempo que pasa hasta que vuelva
     a desplazarse a su posición original*/
 }
-
 .scroll:hover{
 	-webkit-transition: background-position 4s linear 0s !important;
 	-moz-transition: background-position 4s linear 0s !important;
@@ -128,45 +131,42 @@
 	de pantalla más largas se desplazan más rápido*/
 }		
 .scrollImg1{
-	background: url(imgs/ImgPortafolio-min.webp);
+	background: url("imgs/ImgPortafolio-min.webp");
 }
 .scrollImg2{
-	background: url(imgs/imgPortafolio2-min.webp);
+	background: url("imgs/imgPortafolio2-min.webp");
 }
 .scrollImg3{
-	background:url(imgs/imgPortafolio3-min.webp);
+	background: url("imgs/imgPortafolio3-min.webp");
 }
 .scrollImg4{
-	background: url(imgs/imgPortafolio10-min.webp);
+	background: url("imgs/imgPortafolio10-min.webp");
 }
 .scrollImg5{
-	background: url(imgs/imgPortafolio6-min.webp);
+	background: url("imgs/imgPortafolio6-min.webp");
 }
 .scrollImg6{
-	background:url(imgs/imgPortafolio6.2-min.webp);
+	background: url("imgs/imgPortafolio6.2-min.webp");
 }
 .scrollImg7{
-	background:url(imgs/imgPortafolio5.2-min.webp);	
+	background: url("imgs/imgPortafolio5.2-min.webp");	
 }
 .scrollImg8{
-	background:url(imgs/imgPortafolio5-min.webp);	
+	background: url("imgs/imgPortafolio5-min.webp");	
 }
 .scrollImg9{
-	background:url(imgs/imgPortafolio7.2-min.webp);	
+	background: url("imgs/imgPortafolio7.2-min.webp");	
 }
 .scrollImg10{
-	background:url(imgs/imgPortafolio7.3-min.webp);	
+	background: url("imgs/imgPortafolio7.3-min.webp");	
 }
 .scrollImg11{
-	background:url(imgs/imgPortafolio8-min.webp);
+	background: url("imgs/imgPortafolio8-min.webp");
 }
 .scrollImg12{
-	background:url(imgs/imgPortafolio9-min.webp);	
+	background: url("imgs/imgPortafolio9-min.webp");	
 }
-/*Eliminando*/
-/*Eliminando Redundancia del codigo*/
-
-@media screen and (min-width: 320px){
+@media screen and (min-width: 320px) and (orientation:portrait){
 	.header__nav{
 		height: 100vh;
 		width: 100vw;
@@ -187,6 +187,7 @@
 	}
 	.linea2,.linea3,.linea4{
 		display: block;
+		margin-top: 0in;
 	}
 	.section{
 		position: static;
@@ -208,7 +209,7 @@
 	}
 	.sectionBP__article{
 		width: 95%;
-		margin: 0 10px 20px 8px;
+		margin: 0 10px 30px 8px;
 		height: 100%;
 	}
 	.section__sobreMi{
@@ -225,6 +226,68 @@
 		margin: 10px 0;
 	}
 }
+
+@media screen and (min-width: 320px) and (orientation:landscape){
+	.header__nav{
+		height: 100vh;
+		width: 100vw;
+	}
+	.header__nav__listaP{
+		width: 100%;
+		height:100%;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items:center; 
+	}
+	.headerInferior{
+		flex-direction: column;
+		justify-content: flex-end;
+		text-align: center;
+		height: 20vh;
+		width: 100%;
+	}
+	.linea2,.linea3,.linea4{
+		display: block;
+		margin-top: 0in;
+	}
+	.section{
+		position: static;
+		justify-content: center;
+		height:100vh; 
+		width: 100vw;
+	}
+	.section__article{
+		width: 100%;
+		height: 50%;
+		margin: 40px 15px 30px 11px;
+	}
+	.sectionBP{
+		position: static;
+		justify-content: center;
+		height:100vh;
+		width: 100vw;
+		margin-top: 50px;
+	}
+	.sectionBP__article{
+		width: 95%;
+		margin: 0 10px 40px 8px;
+		height: 100%;
+	}
+	.section__sobreMi{
+		flex-direction: row;
+		flex-wrap: wrap;
+		position: static;
+		justify-content: center;
+		width: 100vw;
+		height: 100vh;
+	}
+	.section__sobreMi__article{
+		width: 90%;
+		height:100%;
+		margin: 10px 0;
+	}
+}
+
 
 @media screen and (min-width: 768px) {
 	.header__nav{
@@ -281,7 +344,7 @@
 	}
 	.section__sobreMi__article:first-child{
 		width: 30%;
-		height:50%;
+		height: 60%;
 	}
 	.section__sobreMi__article:last-child{
 		width: 60%;
@@ -362,11 +425,12 @@
 	}
 	.section__sobreMi__article:last-child{
 		width: 100%;
-		height: 50%;
+		height: 45%;
 	}
 
 	.linea2,.linea3,.linea4{
 		display: block;
+		margin-top: -1.1in;
 	}
 }
 
