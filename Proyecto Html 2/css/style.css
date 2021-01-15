@@ -1,0 +1,174 @@
+*{
+  margin:0;
+  border:0;
+  padding:0;
+}
+h2,li,h4,#sesion,#registro{
+  color: white;
+}
+h4{
+  margin-left:50px;
+}
+h3{
+  color:#3cb290;
+}
+nav{
+  background :#3cb290;
+  padding: 10px;
+}
+#registro {
+  background: #52BCDB;
+}
+#sesion {
+  background: #CF433F;
+}
+.cartelera {
+  background: #262b36;
+  display: grid;
+}
+.flex-container,ul{
+  display: flex;
+}
+header,footer {background:#1c1f27 ;}
+li{list-style: none;}
+#sesion,#registro{
+  width: 125px;
+  height: 30px;
+  border-radius: 2px;
+}
+.banner img{
+  width: 100%;
+}
+footer{
+  height: 80px;
+}
+article img{
+  width: 80%;
+}
+/*TLFNO*/
+@media(min-width: 320px){
+  .cartelera{
+    grid-template-columns: repeat(1,290px);
+    grid-template-rows:repeat(8,445px);
+    margin-top: -4px;
+  }
+  .flex-container{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+  }
+  figure img{
+    width: 50px;
+  }
+  #buscar{
+    border-radius:2px;
+    width: 190px;
+    height: 30px; 
+  }
+  ul{
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 230px;
+  }
+  li{
+    width: 50px;
+    margin: 0 20px 0 5px;
+  }
+  .mover{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+  }
+}
+/*TBLT*/
+@media (min-width: 768px){
+  .cartelera{
+    grid-template-columns:repeat(2,360px) ;
+    grid-template-rows:repeat(3,400px);
+  }
+  .absoluto{
+    position: absolute;
+    left: 240px;
+    top: 387px;
+  }
+  .absoluto1{
+    position: absolute;
+    top: 387px;
+    right: 20px;
+  }
+  article{
+    width: 80%;
+  }
+  .pelicula{
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  #buscar{
+    border-radius:2px;
+    width: 230px;
+    height: 30px; 
+  }
+  .flex-container{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+  }
+  ul{
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  li{
+    width: 70px;
+  }
+  #sesion {
+    margin-left: -40px;
+  }
+}
+/*PC*/
+@media(min-width: 1024px){
+  .cartelera{
+    grid-template-columns:repeat(4,190px);
+    grid-template-rows: repeat(2,400px);
+    grid-column-gap: 40px;
+  }
+  article{
+    width: 95%;
+  }
+  article img{
+    width: 100%;
+  }
+  .absoluto{
+    top: 480px;
+    left: 70px;
+  }
+  .absoluto1{
+    top: 870px;
+    left: 170px;
+  }
+  .flex-container{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+  }
+  ul{
+    justify-content:center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  li{
+    width: 140px;
+    margin: 0;
+  }
+  #buscar{
+    border-radius:2px;
+    width: 320px;
+    height: 30px; 
+  }
+  #sesion {
+    margin-left: -100px;
+  }
+  .pelicula{
+    margin-left: 70px;
+  }
+}

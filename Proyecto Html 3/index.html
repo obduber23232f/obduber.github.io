@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<title>Proyecto Html 3</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<header>
+		
+		<div class="container-fluid">
+			<nav class="navbar navbar-default navbar-fixed-top"  >
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<img id="logo" height="62" width="200" src="img/logo.png" alt="CADIF1 - Academia de Software" />
+				</div>
+
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a id="color-letra" href="#">LA ACADEMIA</a></li>
+						<li><a id="color-letra"  href="#">CERTIFICACIÓN</a></li>
+						<li><a id="color-letra" href="#">EMPLEOS</a></li>
+						<li><a id="color-letra" href="#">CONTACTO</a></li>
+						<li><a id="color-letra" href="#">INICIAR SESIÓN</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</nav>
+	</header>
+	<div class="container-fluid">
+		<div id="myCarousel2" class="carousel slide hidden-xs" data-ride="carousel">
+			<!-- Indicadores -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+
+			<!-- Slider -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="img/slider-1.png" alt="foto">
+					<div class="carousel-caption">
+						<button type="button" class="btn btn-info" data-toggle="modal" data-target="#informa">Mayor Informacion</button>
+					</div>
+				</div>
+
+				<div class="item">
+					<img src="img/slider-2.png" alt="foto">
+					<div class="carousel-caption">
+						<button type="button" class="btn btn-info" data-toggle="modal" data-target="#fundamento">Mayor Informacion</button>
+					</div>
+				</div>
+
+				<div class="item">
+					<img src="img/slider-3.png" alt="foto">
+					<div class="carousel-caption">
+						<<button type="button" class="btn btn-info" data-toggle="modal" data-target="#tecnico">Mayor Informacion</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- Controles de izquierda y derecha -->
+			<a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				<span class="sr-only">Anterior</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel2" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="sr-only">Siguiente</span>
+			</a>
+		</div>			
+
+		<div class="container-fluid">
+			<!-- Modal -->
+			<div id="fundamento" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Fundamentos de Programacion</h4>
+						</div>
+						<div class="modal-body">
+							<h3><strong>  Información general</strong></h3>
+							<p>Un programador de aplicaciones crea software que será ejecutado por un dispositivo programable: computadora, teléfonos, reloj, entre otros. Antes de crear una aplicación, ya sea el FrontEnd o el BackEnd, un programador debe tener muy claro los conceptos más fundamentales de la programación, que seran aplicados en cualquier lenguaje.</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="tecnico" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Tecnico en Mantenimiento de Redes y Pcs</h4>
+						</div>
+						<div class="modal-body">
+							<h3><strong>  Información general</strong></h3>
+							<p>Actualmente la necesidad de conectividad entre las computadoras de una organización es fundamental para su buen funcionamiento y mejor aprovechamiento de los recursos tecnológicos. En estos momentos es casi impensable una empresa sin computadoras y sin conexión a internet. Es por esto, que el profesional del soporte técnico es indispensable en cualquier organización que posea 2 computadoras o más, para ofrecer apoyo en las operaciones diarias de la organización, al dar una respuesta rápida a cualquier falla o necesidad en los equipos de tecnologias de información.</p>
+						</div>
+
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+						</div>
+					</div>
+				</div>
+
+				<div id="informa" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Estudia Informatica</h4>
+							</div>
+							<div class="modal-body">
+								<h3><strong>  Información general</strong></h3>
+								<p>Las Carreras Técnicas son paquetes de cursos enfocados en un área de conocimiento específico, con los cuales podrás prepararte para insertarse en el campo laboral con las herramientas necesarias para cumplir las funciones requeridas por cualquier empresa. Son 16 materias con un total de 320 horas prácticas con un enfoque 100% tecnológico, en donde constantemente estarás aplicando los conocimientos adquiridos, siempre proyectándote hacia la realidad del entorno laboral.</p>
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div id="backEnd" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Programación BackEnd con PHP</h4>
+						</div>
+						<div class="modal-body">
+							<h3><strong>  Información general</strong></h3>
+							<p>Un BackEnd es la parte de una aplicación que le da respuestas a los distintos FrontEnds de una plataforma. El BackEnd no es visible para el usuario final y se puede programar en cualquier lenguaje del lado del servidor. Php es un lenguaje muy utilizado para crear páginas web dinámicas. Como se ejecuta del lado del servidor, también es muy utilizado para crear un BackEnd que de soporte a los FrontEnd que lo requieran.</p>
+							<h3><strong>  Objetivo general</strong></h3>
+							<p>Crear el BackEnd de una aplicación Web utilizando el FrameWork Laravel, que implemente servicios Web REST, que se conecte a una base de datos Mysql.</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="camarar" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Curso Cámaras de Seguridad CCTV Nivel I</h4>
+					</div>
+					<div class="modal-body">
+						<h3><strong>Pre requisitos</strong></h3>
+						<p>Computación para Adultos Nivel I</p>
+						<h3><strong>  Objetivo especificos</strong></h3>
+						<ul>
+							<li>Conocer los equipos utilizados en los sistemas CCTV.</li>
+							<li>Reconocer los tipos de cables y conectores necesarios para instalar cámaras CCTV.</li>
+							<li>Aprender a conectar cámaras CCTV.</li>
+							<li>Aprender a configurar el DVR.</li>
+						</ul>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="camara" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Curso Cámaras de Seguridad CCTV Nivel II</h4>
+				</div>
+				<div class="modal-body">
+					<h3><strong>Pre requisitos</strong></h3>
+					<p>Cámaras de Seguridad CCTV Nivel I</p>
+					<h3><strong>  Objetivo especificos</strong></h3>
+					<ul>
+						<li>Conocer los aspectos básicos de redes.</li>
+						<li>Conocer los aspectos básicos de configuración de los routers.</li>
+						<li>Configuración de cámaras ip alambricas e inalambricas</li>
+						<li>Configuración del acceso desde internet</li>
+						<li>Configuración de dispositivos móviles</li>
+						<li>Aprender a configurar camaras PTZ</li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="camara" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Curso Cámaras de Seguridad CCTV Nivel II</h4>
+			</div>
+			<div class="modal-body">
+				<h3><strong>Pre requisitos</strong></h3>
+				<p>Cámaras de Seguridad CCTV Nivel I</p>
+				<h3><strong>  Objetivo especificos</strong></h3>
+				<ul>
+					<li>Conocer los aspectos básicos de redes.</li>
+					<li>Conocer los aspectos básicos de configuración de los routers.</li>
+					<li>Configuración de cámaras ip alambricas e inalambricas</li>
+					<li>Configuración del acceso desde internet</li>
+					<li>Configuración de dispositivos móviles</li>
+					<li>Aprender a configurar camaras PTZ</li>
+				</ul>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div id="electronica" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Curso Electrónica Nivel I</h4>
+			</div>
+			<div class="modal-body">
+				<h3><strong>Pre requisitos</strong></h3>
+				<p>Computación para Adultos Nivel I</p>
+				<h3><strong>  Objetivo especificos</strong></h3>
+				<ul>
+					<li>Estudio de conceptos, leyes y teorías de los circuitos eléctricos.</li>
+					<li>Conocer los componentes fundamentales de circuitos eléctricos y su simbología.</li>
+					<li>Aprender a interpretar los esquemas electrónicos.</li>
+					<li>Aprender a utilizar los instrumentos de medición para la electrónica.</li>
+					<li>Entender los principios y análisis fundamentales del comportamiento de los circuitos electrónicos.</li>
+				</ul>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div id="electronicar" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Curso Electrónica Nivel II</h4>
+			</div>
+			<div class="modal-body">
+				<h3><strong>Pre requisitos</strong></h3>
+				<p>Curso Electrónica Nivel I</p>
+				<h3><strong>  Objetivo especificos</strong></h3>
+				<ul>
+					<li>No Posee Informacion por el momento</li>
+				</ul>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div id="computadora" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Curso Redes de Computadoras Nivel I</h4>
+			</div>
+			<div class="modal-body">
+				<h3><strong>Pre requisitos</strong></h3>
+				<p>No tiene pre requisitos</p>
+				<h3><strong>  Objetivo especificos</strong></h3>
+				<ul>
+					<li>Conocer los aspectos esenciales de las redes y sus elementos.
+						<li>Conocer y comparar los modelos OSI y TCP/IP.</li>
+						<li>Conocer el hardware de interconexión.</li>
+						<li>Familiariarizarse y usar las herramientas para hacer cableado UTP.</li>
+						<li>Conocer las normas de cableado estructurado (LANs) y las fases de un proyecto de cableado.</li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<section>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 l">
+				<img src="img/carrera-informaticas.png" alt="Carreras Técnias" class="imgLogo" />
+				<h2 class="letra" >Carreras Técnicas</h2>
+				<p>Formate profesionalmente y preparate para trabajar.</p>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 l">
+				<img src="img/cursos-presenciales.png" alt="Cursos Presenciales" class="imgLogo" />
+				<h2 class="letra" >Cursos Presenciales</h2>
+				<p>Hazte un experto en los temas relacionados con la computación e informática.</p>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 l">
+				<img src="img/asesoria-tecnicas.png" alt="Asesorías Técnicas" class="imgLogo" />
+				<h2 class="letra" >Asesorías Técnicas</h2>
+				<p>Resuelve los problemas que tengas en el desarrollo de tu proyectos.</p>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 l">
+				<img src="img/alquiler-salon.png" alt="Alquiler de Salones" class="imgLogo" />
+				<h2 class="letra" >Alquiler de Salones</h2>
+				<p>Contamos con una infraestructura adaptada a tus necesidades con la mejor tecnología.</p>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<div class="container-fluid">
+	<div class="row">
+
+		<section class="col-md-4">
+			<div class="container-fluid">
+				<h3 class="h3T">Cursos Presenciales próximos a comenzar</h3>
+				<div class="col-xs-2.4 col-sm-2.4 col-md-2.3  col-lg-2.3">
+
+					<a href="#" data-toggle="modal"  data-target="#camara">
+						<div class="panel panel-default">
+							<span class="nivel">Nivel II</span>
+							<h2>Cámaras de Seguridad CCTV</h2>
+							<span class="hora">sábado 25 de agosto</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-xs-2.4  col-sm-2.4 col-md-2.3 col-lg-2.3">
+					<a href="#" data-toggle="modal"  data-target="#electronicar" >
+						<div class="panel panel-default">
+							<span class="nivel">Nivel II</span>
+							<h2>Electrónica</h2>
+							<span class="hora">sábado 25 de agosto</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-xs-2.4  col-sm-2.4  col-md-2.3 col-lg-2.3">
+					<a href="#" data-toggle="modal"  data-target="#computadora">
+						<div class="panel panel-default">
+							<span class="nivel">Nivel I</span>
+							<h2>Redes de Computadoras</h2>
+							<span class="hora">sábado 25 de agosto</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-xs-2.4  col-sm-2.4 col-md-2.3 col-lg-2.3">
+					<a href="#" data-toggle="modal"  data-target="#electronica">
+						<div class="panel panel-default">
+							<span class="nivel">Nivel I</span>
+							<h2>Electrónica</h2>
+							<span class="hora">sábado 25 de agosto</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-xs-2.4  col-sm-2.4 col-md-2.3 col-lg-2.3">
+					<a href="#" data-toggle="modal"  data-target="#camarar">
+						<div class="panel panel-default">
+							<span class="nivel">Nivel I</span>
+							<h2>Cámaras de Seguridad CCTV</h2>
+							<span class="hora">sábado 25 de agosto</span>
+						</div>
+					</a>
+				</div>
+				
+				<button type="button" class="btn btn-primary btn-xs j">VER TODOS LOS CURSOS</button>
+				
+			</div>
+		</section>
+
+		<section class="col-md-4">
+			<h3>Carreras Técnicas próximas a comenzar</h3>
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<a href="#" data-toggle="modal"  data-target="#backEnd">
+					<div class="panel panel-default">
+						
+						<img height="84" width="84" src="img/aplicaciones.png" alt="programación BackEnd en php">
+						<h2>Programación BackEnd con PHP</h2>
+						<p class="p">Crear un BackEnd con PHP y bases de datos Mysql</p>
+						<br>
+						<span class="hora">Comienza el: lunes 09 de marzo</span></div></a>
+						
+					</div>
+					
+					
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						<a href="#" data-toggle="modal"  data-target="#fundamento">
+							<div class="panel panel-default">
+								
+								<img height="84" width="84" src="img/aplicaciones.png" alt="programación BackEnd en php">
+								<h2>Fundamentos de Programación</h2>
+								<p class="p"> Aprender los fundamentos de la programación</p>
+								<br>
+								<span class="hora">Comienza el: lunes 09 de marzo</span>
+							</div>
+						</a>
+					</div>
+					
+
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						
+						<a href="#" data-toggle="modal"  data-target="#tecnico"><div class="panel panel-default">
+							<img height="84" width="84" src="img/tecnico.png" alt="tecnico">
+							<h2>Técnico en Mantenimiento de Pcs y Redes</h2>
+							<p class="p">Prestar soporte a la IT de una organización</p>
+							<br>
+							<span class="hora">Comienza el: lunes 09 de marzo</span></div>
+						</a>
+						
+					</div>
+					
+					<button type="button" class="btn btn-primary btn-xs s">VER TODAS LOS CARRERAS</button>
+
+						
+					</section>
+
+					<section>
+						<div class="hidden-xs col-sm-6 col-md-4 col-lg-4">
+							<div class="panel panel-default">
+								<div class="panel-body">						
+									<img class="img-responsive imagen" src="img/alquiler-salones.png">		
+								</div>
+							</div>
+						</div>
+						<div class="hidden-xs col-sm-6 col-md-4 col-lg-4">
+							<div class="panel panel-default">
+								<div class="panel-body">
+									
+									<img class="img-responsive imagen1" src="img/wordpress.png">
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+
+			<button class="btn btn-default" data-toggle="collapse" data-target="#demo">Desconectado</button>
+			<div id="demo" class="collapse">
+				<h5>Rellene el formulario a continuacion y le contestaremos lo antes posible</h5>
+				<form class="form-inline" action="/action_page.php">
+					<div class="form-group">
+						<label for="email">Nombre</label>
+						<input type="name" class="form-control" id="email" required="" placeholder="*Nombre">
+					</div>
+					<div class="form-group">
+						<label for="email">Correo Electronico</label>
+						<input type="email" class="form-control" id="email" required="" placeholder="*Correo Electronico">
+					</div>
+					<div class="form-group">
+						<label for="pwd">Contraseña:</label>
+						<input type="password" class="form-control" id="pwd" required="" placeholder="*Contraseña">
+					</div>
+					<div class="checkbox">
+						<label><input type="checkbox"> Recordar Contraseñar</label>
+					</div>
+					<button type="submit" class="btn btn-default e"> Enviar</button>
+				</form>
+				
+			</div>
+		<footer class="container">
+			<div class="row text-center">
+				<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+					<h5>Teléfono</h5>
+					<p>+58 (0251) 717.92.47</p>
+					<p>+58 (0251) 435.25.82</p>
+				</div>
+
+				<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+					<h5>Dirección</h5>
+					<p>Av. Pedro León Torres con calle 59, C.C. Sotavento, Piso 2, Local 27, Barquisimeto Estado Lara, Venezuela.</p>
+				</div>
+
+				<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+					<h5> Escríbenos</h5>
+					<a href="mailto:cadi@cadif1.com">cadi@cadif1.com</a><br />
+					<a href="http://www.twitter.com/cadif1">twitter.com/cadif1</a><br />
+					<a href="http://www.facebook.com/cadif1">facebook.com/cadif1</a>
+				</div>
+
+				<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 mrg">
+					<figure>
+						<img src="img/footer10.png" alt="CADIF1, 15 Años Innovando la Enseñanza" class="img" />
+					</figure>
+				</div>
+			</div>
+		</footer>	
+
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
